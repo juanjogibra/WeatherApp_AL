@@ -104,6 +104,7 @@ page 50281 "WeatherInboxList"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
+                PromotedOnly = true;
 
                 trigger OnAction()
                 var
@@ -113,11 +114,19 @@ page 50281 "WeatherInboxList"
                 end;
             }
         }
+        area(Navigation)
+        {
+            action(GoToSettings)
+            {
+                ApplicationArea = all;
+                Caption = 'Go to settings', comment = 'ESP="Ir a Configuración"';
+                Image = Setup;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+                RunObject = page WeatherSetup;
+            }
+        }
     }
-    trigger OnOpenPage()
-    begin
-        Rec.FilterGroup(2);
-        Rec.SetFilter("Entry No.", '>0');
-        Rec.FilterGroup(0);
-    end;
 }

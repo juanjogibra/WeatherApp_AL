@@ -201,6 +201,12 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page WeatherInboxList - Property Caption</note>
           <target>Buzón clima Lista</target>
         </trans-unit>
+        <trans-unit id="Page 456972844 - Action 2024580050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Go to settings</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ir a Configuración"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WeatherInboxList - Action GoToSettings - Property Caption</note>
+          <target>Ir a Configuración</target>
+        </trans-unit>
         <trans-unit id="Page 456972844 - Action 1868081897 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Get current Weather</source>
           <note from="Developer" annotates="general" priority="2">ESP="Obtener clima actual"</note>

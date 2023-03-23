@@ -5,7 +5,7 @@ table 50280 "WeatherSetup"
 
     fields
     {
-        field(1; "Primary Key"; Integer)
+        field(1; "Primary Key"; Code[10])
         {
             Caption = 'Primary Key', comment = 'ESP="Clave primaria"';
             DataClassification = CustomerContent;

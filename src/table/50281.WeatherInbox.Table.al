@@ -9,6 +9,7 @@ table 50281 "WeatherInbox"
         {
             Caption = 'Entry No.', comment = 'ESP="Nº registro"';
             DataClassification = CustomerContent;
+            MinValue = 1;
         }
         field(2; WeatherId; Integer)
         {
@@ -123,4 +124,11 @@ table 50281 "WeatherInbox"
             Clustered = true;
         }
     }
+
+    procedure GetLastEntryNo(): Integer;
+    var
+        FindRecordManagement: Codeunit "Find Record Management";
+    begin
+        exit(FindRecordManagement.GetLastEntryIntFieldValue(Rec, FieldNo("Entry No.")))
+    end;
 }

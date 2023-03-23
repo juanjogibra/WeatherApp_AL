@@ -43,19 +43,7 @@ codeunit 50280 "WeatherMgt"
 
         //ID JObject --> Generate Entry No and Insert Record
         if (JsonObj.Get('id', JToken)) and (not JToken.AsValue().IsNull) then begin
-            WeatherInbox.SetCurrentKey("Entry No.");
-            if not WeatherInbox.FindLast() then begin
-                WeatherInbox.Reset();
-                WeatherInbox.Init();
-                WeatherInbox."Entry No." := 1;
-            end
-            else begin
-                entryNo := (WeatherInbox."Entry No.") + 1;
-                Clear(WeatherInbox);
-                WeatherInbox.Init();
-                WeatherInbox."Entry No." := entryNo;
-            end;
-
+            WeatherInbox."Entry No." := WeatherInbox.GetLastEntryNo() + 1;
             WeatherInbox.WeatherId := JToken.AsValue().AsInteger();
             WeatherInbox.Insert();
         end;
