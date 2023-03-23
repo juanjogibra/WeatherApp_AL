@@ -10,17 +10,16 @@ codeunit 50280 "WeatherMgt"
     procedure GetCurrentWeather()
     var
         WeatherInbox: record WeatherInbox;
+        TypeHelper: Codeunit "Type Helper";
+        ResultDateTime: DateTime;
         Client: HttpClient;
         Content: HttpContent;
         Response: HttpResponseMessage;
         entryNo: Integer;
-        LocationsArray : JsonArray;
+        LocationsArray: JsonArray;
         JsonObj, JsonObj2 : JsonObject;
         JToken: JsonToken;
         Path, Result : Text;
-        TimezoneOffset: Duration;
-        ResultDateTime : DateTime;
-        TypeHelper: Codeunit "Type Helper";
 
     begin
         WeatherSetup.Get();
@@ -43,10 +42,7 @@ codeunit 50280 "WeatherMgt"
             exit;
 
         //ID JObject --> Generate Entry No and Insert Record
-
-        JsonObj.Get('id', JToken);
-        if not JToken.AsValue().IsNull then begin
-
+        if (JsonObj.Get('id', JToken)) and (not JToken.AsValue().IsNull) then begin
             WeatherInbox.SetCurrentKey("Entry No.");
             if not WeatherInbox.FindLast() then begin
                 WeatherInbox.Reset();
@@ -64,104 +60,86 @@ codeunit 50280 "WeatherMgt"
             WeatherInbox.Insert();
         end;
 
-
         //Weather Array
+        if JsonObj.Get('weather', JToken) then
+            LocationsArray := JToken.AsArray();
 
-        JsonObj.Get('weather', JToken);
-        LocationsArray := JToken.AsArray();
+        if LocationsArray.Get(0, JToken) then begin
+            //Weather JObject
+            JsonObj2 := JToken.AsObject();
 
-        LocationsArray.Get(0, JToken);
+            if (JsonObj2.Get('main', JToken)) and (not JToken.AsValue().IsNull) then
+                WeatherInbox.Validate("Weather Main", JToken.AsValue().AsText());
 
-        //Weather JObject
-
-        JsonObj2 := JToken.AsObject();
-
-        JsonObj2.Get('main', JToken);
-        if not JToken.AsValue().IsNull then
-            WeatherInbox.Validate("Weather Main", JToken.AsValue().AsText());
-
-        JsonObj2.Get('description', JToken);
-        if not JToken.AsValue().IsNull then
-            WeatherInbox.Validate("Weather Description", JToken.AsValue().AsText());
+            if (JsonObj2.Get('description', JToken)) and (not JToken.AsValue().IsNull) then
+                WeatherInbox.Validate("Weather Description", JToken.AsValue().AsText());
+        end;
 
         //Main JObject
 
-        JsonObj.Get('main', JToken);
-        JsonObj2 := JToken.AsObject();
+        if JsonObj.Get('main', JToken) then
+            JsonObj2 := JToken.AsObject();
 
-        JsonObj2.Get('temp', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj2.Get('temp', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherInbox.Validate(Temperature, JToken.AsValue().AsDecimal());
 
-        JsonObj2.Get('feels_like', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj2.Get('feels_like', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherInbox.Validate("Feel Temperature", JToken.AsValue().AsDecimal());
 
-        JsonObj2.Get('temp_min', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj2.Get('temp_min', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherInbox.Validate("Min Temperature", JToken.AsValue().AsDecimal());
 
-        JsonObj2.Get('temp_max', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj2.Get('temp_max', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherInbox.Validate("Max Temperature", JToken.AsValue().AsDecimal());
 
-        JsonObj2.Get('pressure', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj2.Get('pressure', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherInbox.Validate(Pressure, JToken.AsValue().AsDecimal());
 
-        JsonObj2.Get('humidity', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj2.Get('humidity', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherInbox.Validate(Humidity, JToken.AsValue().AsDecimal());
 
         //Base JObject
 
-        JsonObj.Get('base', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj.Get('base', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherInbox.Validate(Base, JToken.AsValue().AsText());
 
         //Visibility JObject
 
-        JsonObj.Get('visibility', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj.Get('visibility', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherInbox.Validate(Visibility, JToken.AsValue().AsDecimal());
 
         //Wind JObject
 
-        JsonObj.Get('wind', JToken);
-        JsonObj2 := JToken.AsObject();
+        if JsonObj.Get('wind', JToken) then
+            JsonObj2 := JToken.AsObject();
 
-        JsonObj2.Get('speed', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj2.Get('speed', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherInbox.Validate("Wind Speed", JToken.AsValue().AsDecimal());
 
-        JsonObj.Get('timezone', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj.Get('timezone', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherInbox.Validate(Timezone, JToken.AsValue().AsInteger());
 
         //Sys JObject
 
-        JsonObj.Get('sys', JToken);
-        JsonObj2 := JToken.AsObject();
+        if JsonObj.Get('sys', JToken) then
+            JsonObj2 := JToken.AsObject();
 
-        JsonObj2.Get('sunrise', JToken);
-        if not JToken.AsValue().IsNull then begin
+        if (JsonObj2.Get('sunrise', JToken)) and (not JToken.AsValue().IsNull) then begin
             ResultDateTime := TypeHelper.EvaluateUnixTimestamp(JToken.AsValue().AsBigInteger());
             WeatherInbox.Validate(Sunrise, DT2Time(ResultDateTime));
         end;
 
-        JsonObj2.Get('sunset', JToken);
-        if not JToken.AsValue().IsNull then begin
+        if (JsonObj2.Get('sunset', JToken)) and (not JToken.AsValue().IsNull) then begin
             ResultDateTime := TypeHelper.EvaluateUnixTimestamp(JToken.AsValue().AsBigInteger());
             WeatherInbox.Validate(Sunset, DT2Time(ResultDateTime));
         end;
 
         //Cloud JObject
 
-        JsonObj.Get('clouds', JToken);
-        JsonObj2 := JToken.AsObject();
+        if JsonObj.Get('clouds', JToken) then
+            JsonObj2 := JToken.AsObject();
 
-        JsonObj2.Get('all', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj2.Get('all', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherInbox.Validate(Clouds, JToken.AsValue().AsInteger());
 
         //Fill record with Weather Setup Info
@@ -179,12 +157,12 @@ codeunit 50280 "WeatherMgt"
     procedure GetLocation()
     var
         Client: HttpClient;
-        Response: HttpResponseMessage;
-        Path, Result : Text;
-        LocationsArray: JsonArray;
-        JToken: JsonToken;
-        JsonObj: JsonObject;
         Content: HttpContent;
+        Response: HttpResponseMessage;
+        LocationsArray: JsonArray;
+        JsonObj: JsonObject;
+        JToken: JsonToken;
+        Path, Result : Text;
     begin
         WeatherSetup.Get();
         WeatherSetup.TestField("API Key");
@@ -206,20 +184,16 @@ codeunit 50280 "WeatherMgt"
 
         JsonObj := JToken.AsObject();
 
-        JsonObj.Get('lat', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj.Get('lat', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherSetup.Validate(Latitude, JToken.AsValue().AsDecimal());
 
-        JsonObj.Get('lon', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj.Get('lon', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherSetup.Validate(longitude, JToken.AsValue().AsDecimal());
 
-        JsonObj.Get('country', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj.Get('country', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherSetup.Validate(Country, JToken.AsValue().AsText());
 
-        JsonObj.Get('state', JToken);
-        if not JToken.AsValue().IsNull then
+        if (JsonObj.Get('state', JToken)) and (not JToken.AsValue().IsNull) then
             WeatherSetup.Validate(County, JToken.AsValue().AsText());
 
         WeatherSetup.Validate(RequestDatetime, CurrentDateTime());

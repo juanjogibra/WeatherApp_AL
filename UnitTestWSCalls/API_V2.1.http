@@ -1,0 +1,14 @@
+###GET API_Key
+https://home.openweathermap.org/api_keys
+
+###GET LOCATION
+GET http://api.openweathermap.org/geo/1.0/direct?q="Your_City"&appid="Your_API_Key"
+
+###GET CURRENT WEATHER
+GET https://api.openweathermap.org/data/2.5/weather?units=metric&lat="your_lat"&lon="Your_lon"&appid="Your_API_Key"
+
+
+
+
+
+
