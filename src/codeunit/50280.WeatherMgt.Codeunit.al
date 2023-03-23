@@ -10,18 +10,16 @@ codeunit 50280 "WeatherMgt"
     procedure GetCurrentWeather()
     var
         WeatherInbox: record WeatherInbox;
-        JsonMgt: Codeunit "JSON Management";
         Client: HttpClient;
         Content: HttpContent;
         Response: HttpResponseMessage;
         entryNo: Integer;
-        JArray, LocationsArray : JsonArray;
+        LocationsArray : JsonArray;
         JsonObj, JsonObj2 : JsonObject;
         JToken: JsonToken;
         Path, Result : Text;
         TimezoneOffset: Duration;
-        EpochDateTime, ResultDateTime : DateTime;
-        TimestampInMilliseconds: BigInteger;
+        ResultDateTime : DateTime;
         TypeHelper: Codeunit "Type Helper";
 
     begin
@@ -183,10 +181,9 @@ codeunit 50280 "WeatherMgt"
         Client: HttpClient;
         Response: HttpResponseMessage;
         Path, Result : Text;
-        LocationsArray, JArray : JsonArray;
+        LocationsArray: JsonArray;
         JToken: JsonToken;
         JsonObj: JsonObject;
-        JsonMgt: Codeunit "JSON Management";
         Content: HttpContent;
     begin
         WeatherSetup.Get();
