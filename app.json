@@ -1,0 +1,33 @@
+{
+  "id": "31d55f42-9faa-4a3e-8ac7-534abf7f3326",
+  "name": "WeatherApp",
+  "publisher": "Juanjo International",
+  "version": "1.0.0.1",
+  "brief": "WeatherApp",
+  "description": "WeatherApp",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "21.0.0.0",
+  "idRanges": [
+    {
+      "from": 50280,
+      "to": 50285
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "10.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}

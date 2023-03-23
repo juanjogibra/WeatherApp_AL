@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="es-ES" original="WeatherApp">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3578828134 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Weather Inbox</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Buzón clima"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Property Caption</note>
+          <target>Buzón clima</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 2587701375 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Base</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Base"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Base - Property Caption</note>
+          <target>Base</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 714791889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>City</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ciudad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field City - Property Caption</note>
+          <target>Ciudad</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 2837919142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clouds</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nubes"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Clouds - Property Caption</note>
+          <target>Nubes</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 1856816140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country</source>
+          <note from="Developer" annotates="general" priority="2">ESP="País"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Country - Property Caption</note>
+          <target>País</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 499448942 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>County</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Región"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field County - Property Caption</note>
+          <target>Región</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº registro"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Entry No. - Property Caption</note>
+          <target>Nº registro</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 1353317122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Feel Temperature</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Sensación térmica"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Feel Temperature - Property Caption</note>
+          <target>Sensación térmica</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 3799459211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Humidity</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Humedad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Humidity - Property Caption</note>
+          <target>Humedad</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 1266564 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Latitude</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Latitud"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Latitude - Property Caption</note>
+          <target>Latitud</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 1270796821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Longitude</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Longitud"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Longitude - Property Caption</note>
+          <target>Longitud</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 1526172852 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max Temperature</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Temp Máxima"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Max Temperature - Property Caption</note>
+          <target>Temp Máxima</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 2134962026 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Min Temperature</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Temp. Mínima"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Min Temperature - Property Caption</note>
+          <target>Temp. Mínima</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 2794990951 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pressure</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Presión Atm."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Pressure - Property Caption</note>
+          <target>Presión Atm.</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 3958172543 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sunrise</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Amanecer"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Sunrise - Property Caption</note>
+          <target>Amanecer</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 672997326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sunset</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Puesta de sol"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Sunset - Property Caption</note>
+          <target>Puesta de sol</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 1825316488 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Temperature</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Temperatura"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Temperature - Property Caption</note>
+          <target>Temperatura</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 44401965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Timezone</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Zona horaria"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Timezone - Property Caption</note>
+          <target>Zona horaria</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 3217673354 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Visibility</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Visibilidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Visibility - Property Caption</note>
+          <target>Visibilidad</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 2784964146 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Weather Description</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Descripción tiempo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Weather Description - Property Caption</note>
+          <target>Descripción tiempo</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 3789649949 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Weather Main</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Tiempo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Weather Main - Property Caption</note>
+          <target>Tiempo</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 1499384199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Weather Id</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Id. consulta tiempo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field WeatherId - Property Caption</note>
+          <target>Id. consulta tiempo</target>
+        </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 1927932253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Wind Speed</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Velocidad del viento"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Wind Speed - Property Caption</note>
+          <target>Velocidad del viento</target>
+        </trans-unit>
+        <trans-unit id="Table 1422985281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Weather Setup</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Conf. Clima"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherSetup - Property Caption</note>
+          <target>Conf. Clima</target>
+        </trans-unit>
+        <trans-unit id="Table 1422985281 - Field 4253087169 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>API Key</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Clave API"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherSetup - Field API Key - Property Caption</note>
+          <target>Clave API</target>
+        </trans-unit>
+        <trans-unit id="Table 1422985281 - Field 714791889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>City</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ciudad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherSetup - Field City - Property Caption</note>
+          <target>Ciudad</target>
+        </trans-unit>
+        <trans-unit id="Table 1422985281 - Field 1856816140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country</source>
+          <note from="Developer" annotates="general" priority="2">ESP="País"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherSetup - Field Country - Property Caption</note>
+          <target>País</target>
+        </trans-unit>
+        <trans-unit id="Table 1422985281 - Field 499448942 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>County</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Región"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherSetup - Field County - Property Caption</note>
+          <target>Región</target>
+        </trans-unit>
+        <trans-unit id="Table 1422985281 - Field 1266564 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Latitude</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Latitud"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherSetup - Field Latitude - Property Caption</note>
+          <target>Latitud</target>
+        </trans-unit>
+        <trans-unit id="Table 1422985281 - Field 1270796821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Longitude</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Longitud"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherSetup - Field Longitude - Property Caption</note>
+          <target>Longitud</target>
+        </trans-unit>
+        <trans-unit id="Table 1422985281 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Clave primaria"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherSetup - Field Primary Key - Property Caption</note>
+          <target>Clave primaria</target>
+        </trans-unit>
+        <trans-unit id="Table 1422985281 - Field 218804332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request Datetime</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Fecha ult. petición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherSetup - Field RequestDatetime - Property Caption</note>
+          <target>Fecha ult. petición</target>
+        </trans-unit>
+        <trans-unit id="Page 456972844 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Weather Inbox List</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Buzón clima Lista"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WeatherInboxList - Property Caption</note>
+          <target>Buzón clima Lista</target>
+        </trans-unit>
+        <trans-unit id="Page 456972844 - Action 1868081897 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Get current Weather</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Obtener clima actual"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WeatherInboxList - Action GetCurrentWeather - Property Caption</note>
+          <target>Obtener clima actual</target>
+        </trans-unit>
+        <trans-unit id="Page 1422985281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Weather Setup</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Conf. Clima"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WeatherSetup - Property Caption</note>
+          <target>Conf. Clima</target>
+        </trans-unit>
+        <trans-unit id="Page 1422985281 - Control 2278520725 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Response</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Respuesta"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WeatherSetup - Control Response - Property Caption</note>
+          <target>Respuesta</target>
+        </trans-unit>
+        <trans-unit id="Page 1422985281 - Control 2884316743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Web Service parameters</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Parámetros servicio Web"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WeatherSetup - Control WebService - Property Caption</note>
+          <target>Parámetros servicio Web</target>
+        </trans-unit>
+        <trans-unit id="Page 1422985281 - Action 551121557 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Get Location</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Obtener localización"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WeatherSetup - Action GetLocation - Property Caption</note>
+          <target>Obtener localización</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
