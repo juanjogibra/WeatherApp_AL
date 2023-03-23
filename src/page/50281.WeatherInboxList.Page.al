@@ -73,19 +73,15 @@ page 50281 "WeatherInboxList"
                 {
                     ApplicationArea = all;
                 }
-                field(Latitude; Rec.Latitude)
+                field(Clouds; Rec.Clouds)
                 {
                     ApplicationArea = all;
                 }
-                field(Longitude; Rec.Longitude)
+                field(Sunrise; Rec.Sunrise)
                 {
                     ApplicationArea = all;
                 }
-                field(Base; Rec.Base)
-                {
-                    ApplicationArea = all;
-                }
-                field(Timezone; Rec.Timezone)
+                field(Sunset; Rec.Sunset)
                 {
                     ApplicationArea = all;
                 }
