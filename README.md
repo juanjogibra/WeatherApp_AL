@@ -21,6 +21,7 @@ So, before launch the requests, you might considering to Set up the Weather sett
  ![image](https://user-images.githubusercontent.com/44053146/227202416-135f976d-f4e2-447e-85f4-60dbde57e72b.png)
 
 Put Get Location, and the Latitude-Logitude fields will be filled
+
 ![image](https://user-images.githubusercontent.com/44053146/227202567-31ed7e6f-8d65-4363-bbfc-b1f98dcae488.png)
 
 
