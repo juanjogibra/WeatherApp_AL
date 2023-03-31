@@ -5,8 +5,6 @@ page 50280 "WeatherSetup"
     PageType = Card;
     SourceTable = WeatherSetup;
     UsageCategory = Administration;
-    DeleteAllowed = false;
-    InsertAllowed = false;
 
     layout
     {
@@ -40,17 +38,14 @@ page 50280 "WeatherSetup"
                 field(Country; Rec.Country)
                 {
                     ApplicationArea = all;
-                    Editable = false;
                 }
                 field(County; Rec.County)
                 {
                     ApplicationArea = all;
-                    Editable = false;
                 }
                 field(RequestDatetime; Rec.RequestDatetime)
                 {
                     ApplicationArea = all;
-                    Editable = false;
                 }
             }
         }
@@ -86,6 +81,7 @@ page 50280 "WeatherSetup"
         if not Rec.Get() then begin
             Rec.Init();
             Rec.Insert();
+            Commit();
         end;
     end;
 }

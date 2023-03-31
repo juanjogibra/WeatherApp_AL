@@ -116,6 +116,12 @@ table 50281 "WeatherInbox"
             Caption = 'Sunset', comment = 'ESP="Puesta de sol"';
             DataClassification = CustomerContent;
         }
+        field(26; "Icon Id"; Integer)
+        {
+            Caption = 'Icon ID', comment = 'ESP="Id. Icono"';
+            DataClassification = CustomerContent;
+        }
+
     }
     keys
     {

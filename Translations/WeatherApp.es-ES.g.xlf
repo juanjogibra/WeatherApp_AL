@@ -57,6 +57,12 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Humidity - Property Caption</note>
           <target>Humedad</target>
         </trans-unit>
+        <trans-unit id="Table 3578828134 - Field 1437123162 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Icon ID</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Id. Icono"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WeatherInbox - Field Icon Id - Property Caption</note>
+          <target>Id. Icono</target>
+        </trans-unit>
         <trans-unit id="Table 3578828134 - Field 1266564 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Latitude</source>
           <note from="Developer" annotates="general" priority="2">ESP="Latitud"</note>
@@ -201,17 +207,22 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page WeatherInboxList - Property Caption</note>
           <target>Buzón clima Lista</target>
         </trans-unit>
-        <trans-unit id="Page 456972844 - Action 2024580050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Go to settings</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ir a Configuración"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page WeatherInboxList - Action GoToSettings - Property Caption</note>
-          <target>Ir a Configuración</target>
+        <trans-unit id="Page 456972844 - Control 4080393476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Current Weather</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Tiempo actual"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WeatherInboxList - Control Weather - Property Caption</note>
+          <target>Tiempo actual</target>
         </trans-unit>
         <trans-unit id="Page 456972844 - Action 1868081897 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Get current Weather</source>
           <note from="Developer" annotates="general" priority="2">ESP="Obtener clima actual"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page WeatherInboxList - Action GetCurrentWeather - Property Caption</note>
           <target>Obtener clima actual</target>
+        </trans-unit>
+        <trans-unit id="Page 2142833413 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WeatherPage</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WeatherPage - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1422985281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Weather Setup</source>
@@ -236,6 +247,12 @@
           <note from="Developer" annotates="general" priority="2">ESP="Obtener localización"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page WeatherSetup - Action GetLocation - Property Caption</note>
           <target>Obtener localización</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 445992062 - Control 2142833413 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Current Weather</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Tiempo actual"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension BusinessManagerRoleCenter - Control WeatherPage - Property Caption</note>
+          <target>Tiempo actual</target>
         </trans-unit>
       </group>
     </body>

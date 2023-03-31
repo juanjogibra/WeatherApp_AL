@@ -3,7 +3,7 @@ codeunit 50280 "WeatherMgt"
 
     trigger OnRun()
     begin
-
+        GetCurrentWeather();
     end;
 
 
@@ -55,6 +55,9 @@ codeunit 50280 "WeatherMgt"
         if LocationsArray.Get(0, JToken) then begin
             //Weather JObject
             JsonObj2 := JToken.AsObject();
+
+            if (JsonObj2.Get('id', JToken)) and (not JToken.AsValue().IsNull) then
+                WeatherInbox.Validate("Icon Id", JToken.AsValue().AsInteger());
 
             if (JsonObj2.Get('main', JToken)) and (not JToken.AsValue().IsNull) then
                 WeatherInbox.Validate("Weather Main", JToken.AsValue().AsText());
