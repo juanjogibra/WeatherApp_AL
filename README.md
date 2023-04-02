@@ -33,7 +33,7 @@ Now, you can to get the current weather
 
 
 
-CHANGES V.2 
+Version 1.0.0.2:
 
 
 Now, he have a Widget in our Weather Inbox list and the Business manager Role Center which it will change depends of the selected record
