@@ -133,4 +133,9 @@ page 50281 "WeatherInboxList"
         Rec.SetFilter("Entry No.", '>0');
         Rec.FilterGroup(0);
     end;
+
+    trigger OnAfterGetCurrRecord()
+    begin
+        CurrPage.Weather.Page.Change(Rec."Entry No.");
+    end;
 }

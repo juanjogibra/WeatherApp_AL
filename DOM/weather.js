@@ -40,6 +40,21 @@ function Initialize(City, Country, temp, icon, description) {
     document.getElementById("myImg").src = url;
 }
 
+
+
+function Change (City, Country, temp, icon, description) {
+    
+    const markp = `${temp}<sup>°C</sup>`
+    let url = `https://raw.githubusercontent.com/juanjogibra/WeatherApp_AL/30ad6881723d56d5903fffb89780f275614be8de/DOM/icons/${icon}.svg`
+
+
+    document.getElementById("City").innerHTML = City;
+    document.getElementById("CountryPrefix").innerHTML = Country;
+    document.getElementById("Description").innerHTML = description;
+    document.getElementById("Temp").innerHTML = markp;
+    document.getElementById("myImg").src = url;
+}
+
 function getImagePath() {
     return "icons/sunny.svg";
 }
