@@ -30,7 +30,7 @@ Now, you can to get the current weather
 ![image](https://user-images.githubusercontent.com/44053146/227203176-ec0297dc-63d8-44dd-93b0-bc46b64a55eb.png)
 
 
-
+Get Current Weather function are localizeed in a Codeunit and I put into OnRun() Trigger so, it´s possible to use the function in a Job Queue and get the weather periodically (for example, every six hours)
 
 
 Version 1.0.0.2:
