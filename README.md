@@ -29,4 +29,25 @@ Now, you can to get the current weather
 
 ![image](https://user-images.githubusercontent.com/44053146/227203176-ec0297dc-63d8-44dd-93b0-bc46b64a55eb.png)
 
+
+
+
+
+CHANGES V.2 
+
+
+Now, he have a Widget in our Weather Inbox list and the Business manager Role Center which it will change depends of the selected record
+
+
+
+<img width="889" alt="image" src="https://user-images.githubusercontent.com/44053146/229366610-4c4d0a24-6d9b-4919-ad25-e6d7cbf0d81e.png">
+
+
+
+This Widget are made of Javascript and have been introduced in Business central though of a Conrol Addin in a Factbox (https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-control-addin-object) 
+
+
+You can find this development in the project, and see how we can create the Widget and show in BC thanks to the Control Addin Properties and a bit of imagination :) 
+
+
 I hope you enjoy!
